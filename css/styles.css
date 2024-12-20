@@ -1,0 +1,193 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #1d1f21, #282c34);
+  color: #fff;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo img {
+  height: 40px;
+}
+
+.navbar .logo span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 10px;
+}
+
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #61dafb;
+}
+
+/* 下拉菜单 */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  min-width: 150px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #444;
+}
+
+.nav-links li:hover .dropdown-content {
+  display: block;
+}
+
+/* 服务卡片 */
+.services .cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.card {
+  background: linear-gradient(135deg, #61dafb, #282c34);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.card p {
+  color: #ddd;
+}
+
+.card-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  background: #61dafb;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.card-link:hover {
+  background: #4fa3d8;
+  transform: scale(1.05);
+}
+
+.contact-info a {
+  color: #32cd32; /* 修改为亮绿色 */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  color: #28a745; /* 鼠标悬停时变为更深的绿色 */
+  text-decoration: underline;
+}
+
+.about-list {
+  list-style: none; /* 去掉默认的列表样式 */
+  padding: 0;       /* 去掉内边距 */
+  margin: 20px auto; /* 设置外边距，水平居中 */
+  text-align: center; /* 居中对齐 */
+  width: 80%;        /* 控制内容宽度 */
+}
+
+.about-list li {
+  font-size: 16px;            /* 调整字体大小 */
+  line-height: 1.8;           /* 增加行间距 */
+  margin-bottom: 10px;        /* 添加每个列表项之间的间距 */
+  color: #61dafb;             /* 设置文字颜色为亮蓝色 */
+  position: relative;         /* 启用相对定位以放置自定义圆点 */
+  padding-left: 25px;         /* 给圆点留出空间 */
+}
+
+.about-list li::before {
+  
+  position: absolute;         /* 绝对定位 */
+  left: 0;                    /* 放置在左边 */
+  color: #61dafb;             /* 修改圆点颜色为亮蓝色 */
+  font-size: 18px;            /* 调整圆点大小 */
+  top: 2px;                   /* 调整圆点垂直对齐 */
+}
+
+.download-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  text-align: left;
+  max-width: 600px;
+}
+
+.download-list li {
+  margin: 10px 0;
+}
+
+.download-list a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.download-list a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
